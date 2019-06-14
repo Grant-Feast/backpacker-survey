@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>The Backpacker Survey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">The Backpacker Survey</h1>
+  <div id="form-outer">
+    <p id="description">Tell us about your adventures</p>
+    <form id="survey-form">
+      <div id="row-tab">
+        <div id="left-tab">
+          <label id="name-label" for="name">* Name:</label>
+        </div>
+        <div id="right-tab">
+          <input class="input" type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+      </div>
+      <div id="row-tab">
+        <div id="left-tab">
+          <label id="number-label" for="age">* Age:</label>
+        </div>
+        <div id="right-tab">
+          <input class="input" type="number" id="number" name="age" min="18" max="110" placeholder="Enter your age" required>
+        </div>
+      </div>
+      <div id="row-tab">
+        <div id="left-tab">
+          <label id="email-label" for="email">* Email:</label>
+        </div>
+        <div id="right-tab">
+          <input class="input" type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+      </div>
+      <div id="row-tab">
+        <div id="left-tab">
+          <label for="sex">Are you...</label>
+        </div>
+        <div id="right-tab">
+          <ul style="list-style: none">
+            <li class="radio"><label>Male<input type="radio" id="sex" class="rating" name="radio-buttons" value="m"></label></li>
+            <li class="radio"><label>Female<input type="radio" id="sex" class="rating" name="radio-buttons" value="f"></label</li>
+          </ul>
+        </div>
+      </div>
+      <div id="row-tab">
+        <div id="left-tab">
+          <label id="location" for="location">Where are you from?</label>
+        </div>
+        <div id="right-tab">
+          <input class="input" id="location" type="text" name="location" placeholder="eg. London">
+        </div>
+      </div>
+      <div id-"row-tab">
+        <div id="left-tab">
+          <label for="dropdown">Which position do you currently hold?</label>
+        </div>
+        <div id="right-tab">
+          <select id="dropdown">
+            <option disabled value>select an option</option>
+            <option value="employed">Employed</option>
+            <option value="self-employed">Self Employed</option>
+            <option value="unemployed">Unemployed</option>
+            <option value="student">Student</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+      <div id="row-tab">
+        <div id="left-tab">
+          <label for="favdest">What is your favourite destination so far?</label>
+        </div>
+        <div id="right-tab">
+          <input class="input" type="text" id="favdest" placeholder="eg. Canada">
+        </div>
+      </div>
+      <div id="row-tab">
+        <div id="left-tab">
+          <label for="time">How long do you normally go away away for?</label>
+        </div>
+        <div id="right-tab">
+          <ul style="list-style: none">
+            <li class="radio"><label>1 - 2 weeks<input type="radio" id="time" class="rating" name="radio" value="a"></label></li>
+            <li class="radio"><label>2 - 3 weeks<input type="radio" id="time" class="rating" name="radio" value="b"></label></li>
+            <li class="radio"><label>3 - 4 weeks<input type="radio" id="time" class="rating" name="radio" value="c"></label></li>
+            <li class="radio"><label>1 month plus<input type="radio" id="time" class="rating" name="radio" value="d"></labels></li>
+          </ul>
+        </div>
+      </div>
+      <div id="row-tab">
+        <div id="left-tab">
+          <label for="continents">Which continents have you been to?</label>
+        </div>
+        <div id="right-tab">
+          <ul style="list-style: none">
+            <li class="checkbox"><label><input class="rating" type="checkbox" id="continents" name="continents" value="1">Europe</label></li>
+            <li class="checkbox"><label><input class="rating" type="checkbox" id="continents" name="continents" Value="2">North America</label></li>
+            <li class="checkbox"><label><input class="rating" type="checkbox" id="continents" name="continents" Value="4">Asia</label></li>
+            <li class="checkbox"><label><input class="rating" type="checkbox" id="continents" name="continents" Value="4">South America</label></li>
+            <li class="checkbox"><label><input class="rating" type="checkbox" id="continents" name="continents" Value="5">Oceania</label></li>
+            <li class="checkbox"><label><input class="rating" type="checkbox" id="continents" name="continents" Value="6">Antartica</label></li>
+            <li class="checkbox"><label><input class="rating" type="checkbox" id="continents" name="continents" Value="7">Africa</label></li>
+          </ul>
+        </div>
+      </div>
+      <div id="row-tab">
+        <div id="left-tab">
+          <label for="plans">What are your next travel plans?</label>
+        </div>
+        <div id="right-tab">
+          <textarea class="input" id="plans" style="height: 50px;" placeholder="Write your plans here"></textarea>
+        </div>
+      </div>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

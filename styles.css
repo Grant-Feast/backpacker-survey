@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+
+h1 {
+  font-family: 'lobster', cursive;
+  text-align: center;
+  font-size: 50px;
+}
+
+p {
+  font-family: 'Nunito Sans', sans-serif;
+  text-align: center;
+  font-size: 30px;
+}
+
+#left-tab {
+  display: inline-block;
+  width: 40%;
+  text-align: right;
+  vertical-align: top;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+#right-tab {
+  display: inline-block;
+  width: 48%;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.input {
+  height: 20px;
+  width: 200px;
+  margin: 10px;
+  padding: 5px;
+}
+
+#dropdown {
+  height: 25px;
+  width: 214px;
+  margin-top: 11px;
+  margin-left: 10px;
+}
+
+#form-outer {
+  width: 70%;
+  padding: 10px;
+  margin: 0 auto;
+  border-width: 1px;
+  border-style: solid;
+  max-width: 900px;
+}
+
+.rating,
+input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+}
+
+.radio, .checkbox {
+  position: relative;
+  display: block;
+  left: -43px;
+  margin-left: 10px;
+  padding-bottom: 10px;
+}
+
+#submit {
+  background-color: black;
+  color: white;
+  height: 30px;
+  width: 90px;
+  font-size: 15px;
+  border-radius: 5px;
+  margin-left: 400px;
+  margin-top: 30px;
+}
+
+#submit:hover {
+  color: black;
+  background-color: white;
+}
+
+#plans {
+  width: 280px;
+  padding: 5px;
+}
+
+@media screen and (max-width: 833px) {
+  .input {
+    width: 80%;
+  }
+  select {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  #left-tab {
+    width: 100%;
+    text-align: left;
+  }
+  .rightTab {
+    width: 80%;
+    float: left;
+  }
+  .input {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+}
